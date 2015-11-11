@@ -1,0 +1,403 @@
+/*HOJA DE ESTILO PARA TODAS LAS PAGINAS WEB*/
+
+
+* {
+    font-family: "Century Gothic", sans-serif;
+    vertical-align: middle;
+}/*DANDOLE ESTILO A TODO EL DOCUMENTO*/
+
+header {
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    border-bottom: solid;
+    border-bottom-color: skyblue;
+}/*ESTILO A CABECERA*/
+
+/*ESTILO A TITULOS DE TODAS LAS PAGINAS*/
+#Titulo {
+margin: 1% 2% 1% 2%;
+padding: 1%;
+padding-top: 2%;
+padding-bottom: 2%;
+border-radius: 12.5px;
+display: inline-block;
+color: white;
+text-shadow:
+-2px -2px 0 #6495ED, 
+1px -2px 0 #6495ED,
+-2px 2px 0 #6495ED,
+2px 2px 0 #6495ED,
+1px 1px #6495ED,
+2px 2px #6495ED,
+3px 3px #6495ED,
+4px 4px #6495ED,
+5px 5px #6495ED,
+6px 6px #6495ED,
+7px 7px #6495ED,
+8px 8px #6495ED,
+9px 9px #6495ED,
+10px 10px black,
+11px 11px black,
+12px 12px black,
+13px 13px black,
+14px 14px black,
+15px 15px #29296e,
+16px 16px #29296e,
+17px 17px #29296e,
+18px 18px #29296e,
+19px 19px #29296e,
+20px 20px #29296e;
+font-size: 45px;
+font-family: 'Henny Penny', cursive;
+}
+
+
+img {
+    opacity: 1;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+    -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+    -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+}
+
+/*ESTILO Y UBICACANDO LAS IMAGENES DEL TITULO*/
+@media screen and (min-width: 700px){
+#Images, .Images {
+    display: inline-block;
+    margin: 1% auto;
+    width: 8%;
+    
+}
+}
+
+@media screen and (max-width: 699px){
+#Images, .Images{
+      display: none;
+}
+}
+
+/*COLOR DE FONDO A TODAS LAS PAGINAS*/
+body {
+    background: url("../img/fondo2.jpg");
+    padding: 0;
+    margin: 0;
+}
+
+/*ESTILO MENU*/
+#nav-trigger {
+  display: none;
+  text-align: center; }
+  #nav-trigger span {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase; }
+    #nav-trigger span:after {
+      display: inline-block;
+      margin-left: 10px;
+      width: 20px;
+      height: 10px;
+      content: "";
+      border-left: solid 10px transparent;
+      border-top: solid 10px #fff;
+      border-right: solid 10px transparent; }
+    #nav-trigger span:hover {
+      background-color: black; }
+    #nav-trigger span.open:after {
+      border-left: solid 10px transparent;
+      border-top: none;
+      border-bottom: solid 10px #fff;
+      border-right: solid 10px transparent; }
+
+nav {
+  margin-bottom: 30px; 
+  z-index: 999;
+}
+
+nav#nav-main {
+  background-color: black;
+  padding: 10px 0; }
+  nav#nav-main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+  nav#nav-main li {
+    display: inline-block;
+    border-right: solid 1px #cc0028;
+    padding: 0 5px; }
+    nav#nav-main li:last-child {
+      border-right: none; }
+  nav#nav-main a {
+    display: block;
+    color: white;
+    padding: 10px 30px; }
+    nav#nav-main a:hover {
+      background-color: #6495ED;
+      color: #fff; }
+
+nav#nav-mobile {
+  position: relative;
+  display: none; }
+  nav#nav-mobile ul {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: black; }
+  nav#nav-mobile li {
+    display: block;
+    padding: 5px 0;
+    margin: 0 5px;
+    border-bottom: solid 1px #cc0028; }
+    nav#nav-mobile li:last-child {
+      border-bottom: none; }
+  nav#nav-mobile a {
+    display: block;
+    color: white;
+    padding: 10px 30px; }
+    nav#nav-mobile a:hover {
+      background-color: #6495ED;
+      color: #fff; }
+
+/* =Media Queries
+-------------------------------------------------------------- */
+@media all and (max-width: 700px) {
+  #nav-trigger {
+    display: block; }
+
+  nav#nav-main {
+    display: none; }
+
+  nav#nav-mobile {
+    display: block; }
+}
+/*FIN DE MENU*/
+
+@media screen and (min-width: 900px){
+    article.inicio {
+    text-align: center;
+    padding: 1%;
+    width: 95%;
+    border: 1px solid LightGray;
+    margin: 1% auto;
+    background: LightGray;
+    box-shadow: 2px 2px 5px black;
+}
+}
+
+@media screen and (max-width: 899px){
+    article.inicio{
+        text-align: center;
+    padding: 1%;
+    border: 1px solid LightGray;
+    margin: 1% auto;
+    background: LightGray;
+    box-shadow: 2px 2px 5px black;
+    }
+    p{
+        font-size: 13px;
+    }
+    li{
+        font-size: 13px;
+    }
+}
+/*FIN DE ESTILO*/
+
+/*ESTILO AL TITULO DE HISTORIA DE DIVISAS*/
+.titulo_historia{
+    text-align: center;
+}
+/*APLICANDO ESTILO A TODA LA CAJA QUE ENVUELVE LA 
+HISTORIA DE DIVISAS PARA DIFERENTES RESOLUCIONES*/
+@media screen and (min-width: 900px){
+.caja{
+    padding: 1%;
+    width: 95%;
+    border: 1px solid LightGray;
+    margin: 1% auto;
+    background: LightGray;   
+    box-shadow: 2px 2px 5px black;
+}
+}
+@media screen and (max-width: 899px){
+ .caja{
+    padding: 1%;
+    border: 1px solid #F0F8FF;
+    margin: 1% auto;
+    background: #F0F8FF;   
+    box-shadow: 2px 2px 5px black;
+}   
+}
+/*FIN DE ESTILO PARA DIFERENTES RESOLUCIONES*/
+ul {
+    list-style: none;
+}
+
+/*CENTRANDO PIE DE PAGINA*/
+footer {
+    text-align: center;
+}
+/**/
+
+/*DANDO MARGENES A TODOS LOS PARRAFOS*/
+p {
+    margin: 1% 2% 1% 2%;
+}
+
+/*APLICANDO ESTILO A DIFERENTES RESOLUCIONES A LA TABLA
+QUE SE ENCUENTRA EN LA PAGINA RESGISTRO*/
+@media screen and (min-width: 900px){
+#tablaregistro{
+    margin-left: 18%;
+        margin-top: 1%;
+    width: 65%;
+    border: solid 1px;
+    border: solid 1px;
+    border-radius: 1%;
+    box-shadow: 2px 2px 5px 0px;
+    }
+}
+
+@media screen and (max-width: 899px){
+#tablaregistro{
+    margin: 0 auto;
+    margin-top: 1%;
+    font-size: 13px;
+    border: solid 1px;
+    border-radius: 10%;
+    box-shadow: 2px 2px 5px 0px;
+}
+}
+/*FIN DE ESTILO*/
+
+/*ESTILO PARA LA CABECERA DE LA TABLA*/
+#header{
+    color: skyblue;
+    text-shadow: 1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+/*ESTILO PARA LAS FILAS DE LAS TABLAS*/
+tr{
+    background-color:  white;
+    border-color:  black;
+}
+
+/*ESTILOS A TITULOS DE H3 DE LAS PAGINAS WEB*/
+h3{
+    text-align: center;
+}
+
+/*ESTILO PARA DIFERENTES RESOLUCIONES DE LA PAGINA
+CONVERTIDOR DE DIVISAS*/
+/*SE LE APLICA ESTILO A LA CAJA QUE CONTIENE TODO*/
+@media screen and (min-width: 900px){
+    #caja_conversion{
+        background-color: LightGray;
+        margin-left: 10%;
+        margin-top: 1%;
+        width: 75%;
+        padding: 3%;
+        box-shadow: 2px 2px 5px LightGray;
+    }
+}
+@media screen and (max-width: 899px){
+    #caja_conversion{
+        background-color: LightGray;
+        margin: 7 auto;
+        padding: 3%;
+        box-shadow: 2px 2px 5px LightGray;
+    }
+}
+/*FIN DE ESTILO A DIFERENTES RESOLUCIONES*/
+
+/*SE UBICAN COMO BLOQUES EN LINEA PARA ORGANIZAR LAS
+CAJAS DE TEXTO Y LAS LISTAS DE SELECCION CON SUS LABELS*/
+#caja1, #caja2, #caja3, #caja4{
+    display: inline-block;
+}
+
+/*SE PONEN EN BLOQUES LOS LABELSM CAJA DE TEXTOS
+Y LISTAS DE SELECCION*/
+@media screen and (min-width: 600px){
+#l1, #l2, #select1, #select2, #l3, #l4, #cantidad1, #cantidad2{
+    display: block;
+}
+/*SE FLOTAN AL LADO DERECHO LAS CAJAS 1 Y 4 */
+#caja1{
+    float: right;
+}
+#caja4{
+    float: right;
+}
+
+/*ESTILO Y UBICACION DEL BOTON CONVERTIR DE LA PAGINA
+CONVERTIDOR DE DIVISAS*/
+#btnConvertidor{
+    position: absolute;
+    width: 10%;
+    height: 8%;
+    left: 45%;
+    border: hidden;
+    background-color: rgba(20,0,60,1);
+    color: white;
+}
+/*ESTILO A LA LINEA DE EN MEDIO DE LA PAGINA*/
+#linea1{
+    width: 1px;
+    height: 60px;
+    display: inline;
+    position: absolute;
+    left: 50%;
+}
+
+/*LINEA EXTRA QUE SE MUESTRA CUANDO LA RESOLUCION
+LLEGA AL MINIMO */
+#linea_escondida{
+    display: none;
+}
+}
+
+/*ESTILO QUE CAMBIA EL ASPECTO QUE CONTIENE TODA LA CAJA 
+DE LA PAGINA DE CONVERTIDOR DE DIVISAS CUANDO LLEGA A LA MINIMA 
+RESOLUCION*/
+@media screen and (max-width: 599px){
+
+#select1, #select2, #cantidad1, #cantidad2, #btnConvertidor{
+    float: right;
+}
+#btnConvertidor{
+    height: 25px;
+    border: hidden;
+    background-color: rgba(20,0,60,1);
+    color: white;
+}
+#linea_escondida{
+    display: block;
+}
+}
+/**/
+
+/*Estilos textbox*/
+#cantidad2{
+    color: #cc0028;
+    background-color: #6495ED;
+    border: solid;
+    border-color: #6495ED;
+}
+#vermonedas{
+    color: black;
+    background-color: #6495ED;
+    border: solid;
+    border-color: #6495ED;
+}
+/*---------------*/
+/*FIN DE ESTILO*/

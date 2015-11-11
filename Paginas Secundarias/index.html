@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Conversor de Divisas</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/slider.css">
+    <link rel="stylesheet" href="../css/estilo_slider.css" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="../js/CierreSesion.js"></script>
+    <script type="text/javascript" src="../js/Conversiones.js"></script>
+    <script src="../js/plugin/bjqs.min.js"></script>  
+    <script src="../js/slider.js"></script>
+
+    <!--Script para menu responsive-->
+    <script src="../js/plugin/modernizr.custom.js"></script>  
+    <script src="../js/plugin/jquery-1.9.1.min.js"></script>  
+    <script src="../js/menuresponsive.js"></script>  
+</head>
+<body>
+    <div id="cajita"></div>
+<header>
+        <img class="Images"id="Images" src="../img/Monedas.png">
+	<h1 id="Titulo">Conversor de Divisas</h1>
+        <img class="Images"id="Images" src="../img/Monedas.png">
+</header>
+<!---->
+<!--Contenedor del menu -->
+<nav id="nav-main" class="nav-main"> 
+<ul class="Menu" id="nav">
+	<li><a  id="Primero" title="Opcion 1" class="Opc" href="index.html">Inicio</a></li>
+	<!--li><a title="Opcion 2" class="Opc" href="Paginas Secundarias/historiadivisas.html">Registrarse</a></li-->
+	<li><a title="Opcion 3" class="Opc" href="convertidor.html">Conversiones Divisas</a></li>
+	<li><a title="Opcion 4" class="Opc" href="registro.html">Registro</a></li>
+	<li><a title="Opcion 5" class="Opc" href="Nosotros.html">Nosotros</a></li>
+</ul>
+</nav>
+<div id="nav-trigger">
+<span>Menu</span>
+</div>
+<nav id="nav-mobile"></nav>
+<!---->
+<!--Seccion en donde esta toda la informacion de la pagina de inicio-->
+<!---Slider-->
+<div id="slider">
+        <ul class="bjqs">
+            <li>
+                <img src="../img/1.jpg" alt="" title="Convertidor de Divisas Libre" />
+            </li>
+            <li>
+                <img src="../img/2.jpg" alt="" title="Convertidor de Divisas Libre" />
+            </li>
+            <li>
+                <img src="../img/3.jpg" alt="" title="Convertidor de Divisas Libre" />
+            </li>
+        </ul>
+</div>
+<!--Fin del Slider -->
+<section>
+<article class="inicio">
+<h4>Que Realizamos:</h4>
+<p>Nuestra entidad brinda un servicio de conversión de monedas conforme a los estándares predeterminados y actualizados por la bolsa de valores.</p>	
+
+<h4>Ofrecemos las siguientes conversiones:</h4>
+<!--Grupo de opciones donde se muestran una lista de monedas para que el usario las observe-->
+<select id="vermonedas">
+    <option>Click para ver conversiones disponibles</option>
+    <option value="0">USD - Dólar</option>
+        <option value="1">EUR - Euro</option>
+        <option value="2">Esterlina RU - Libra</option>
+        <option value="3">Mexico - Peso</option>
+        <option value="4">Costa Rica - Colón</option>
+        <option value="5">Japón - Yen</option>
+        <option value="6">China - Renmimbi Yuan</option>
+        <option value="7">Suiza - Franco</option>
+        <option value="8">Venezuela - Bolívar</option>
+        <option value="9">Indonesia - Rupia</option>
+</select>
+<!---->
+<h4>Intrucciones para realizar conversiones:</h4>
+    <li type="none">Ubicarse en el menu de navegación y dirijirse a "Conversiones Divisas"</li>
+    <li type="none">Cuando entre al convertidor de divisas se encontrara con 2 opciones. en la primera debera escoger la moneda que se tiene y en la segunda a la que se quiere convertir, debera ingresar la cantidad y el resultado se mostrara en la caja de texto en la derecha.</li>
+    <li type="none">Una vez realizado las conversiones en el menu habra un area de registro donde el usuario vera las conversiones que realizo.</li>
+</article>	
+</section>
+<!--PIE DE PAGINA-->
+<footer>
+	<p>2015 &#174; All Rights Reserved</p>
+</footer>
+<!---->
+</body>
+</html>

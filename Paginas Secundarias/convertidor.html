@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Conversor de Divisas</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" href="../css/estilo_slider.css" />
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="../js/plugin/bjqs.min.js"></script>
+  <script src="../js/slider.js"></script>
+  <script type="text/javascript" src="../js/Conversiones.js"></script>
+  <script type="text/javascript" src="../js/CierreSesion.js"></script>
+  <script type="text/javascript" src="../js/registro.js"></script>
+  
+  <!--Script para menu responsive-->
+    <script src="../js/plugin/modernizr.custom.js"></script>  
+    <script src="../js/plugin/jquery-1.9.1.min.js"></script>  
+    <script src="../js/menuresponsive.js"></script> 
+</head>
+<body>
+<div id="cajita"></div>
+<!--Cabecera de pagina web donde se encuentra el titulo de la pagina-->
+<header>
+        <img alt="monedas"id="Images"class="Images" src="../img/Monedas.png">
+	<h1 id="Titulo">Conversor de Divisas</h1>
+        <img alt="monedas"id="Images"class="Images" src="../img/Monedas.png">
+</header>
+<!---->
+<!--Desde aqui inicia el menu de las paginas web-->
+<nav id="nav-main" class="nav-main"> 
+<ul class="Menu" id="nav">
+	<li><a  id="Primero" title="Opcion 1" class="Opc" href="index.html">Inicio</a></li>
+	<!--li><a title="Opcion 2" class="Opc" href="Paginas Secundarias/historiadivisas.html">Registrarse</a></li-->
+	<li><a title="Opcion 3" class="Opc" href="convertidor.html">Conversiones Divisas</a></li>
+	<li><a title="Opcion 4" class="Opc" href="registro.html">Registro</a></li>
+	<li><a title="Opcion 5" class="Opc" href="Nosotros.html">Nosotros</a></li>
+</ul>
+</nav>
+<div id="nav-trigger">
+<span>Menu</span>
+</div>
+<nav id="nav-mobile"></nav>
+
+<!--Final del menu-->
+
+<!---Slider-->
+<div id="slider">
+        <ul class="bjqs">
+            <li>
+                <img src="../img/1.jpg" alt="" title="Convertidor de Divisas Libre" />
+            </li>
+            <li>
+                <img src="../img/2.jpg" alt="" title="Convertidor de Divisas Libre" />
+            </li>
+            <li>
+                <img src="../img/3.jpg" alt="" title="Convertidor de Divisas Libre" />
+            </li>
+        </ul>
+</div>
+<!--Fin del Slider -->
+
+<!--Contenedor principal donde se encuentran las secciones del convertidor de divisas, se ha segmentado en cuatro cajas para organizarlos y ordenarlos con el css-->
+    <div id="caja_conversion"><!--Caja princiapal-->
+    <form name="formulario" id="formulario">
+    <h3>Realice las Conversiones de Divisas</h3>
+    <div id="caja1"><!--Primera caja-->
+      <label id="l1">Seleccione Moneda a Convertir:</label> 
+      <select id="Aconvertir" name="Aconvertir"><!--Lista de monedas para convertir-->
+       <option>Seleccione una opcion</option>
+        <option value="0">USD - Dólar</option>
+        <option value="1">EUR - Euro</option>
+        <option value="2">Esterlina RU - Libra</option>
+        <option value="3">Mexico - Peso</option>
+        <option value="4">Costa Rica - Colón</option>
+        <option value="5">Japón - Yen</option>
+        <option value="6">China - Renmimbi Yuan</option>
+        <option value="7">Suiza - Franco</option>
+        <option value="8">Venezuela - Bolívar</option>
+        <option value="9">Indonesia - Rupia</option>
+      </select>
+    </div>
+    <hr id="linea1"><!--Linea vertical de la pagina web-->
+    <div id="caja2"><!--Segunda caja-->
+        <label id="l2">Seleccione moneda A ver Conversion:</label>
+        <select id="Vconversion" name="Vconversion"><!--Segunda lista de monedas para convertir-->
+            <option>Seleccione una opcion</option>
+            <option value="0">USD - Dólar</option>
+        <option value="1">EUR - Euro</option>
+        <option value="2">Esterlina RU - Libra</option>
+        <option value="3">Mexico - Peso</option>
+        <option value="4">Costa Rica - Colón</option>
+        <option value="5">Japón - Yen</option>
+        <option value="6">China - Renmimbi Yuan</option>
+        <option value="7">Suiza - Franco</option>
+        <option value="8">Venezuela - Bolívar</option>
+        <option value="9">Indonesia - Rupia</option>
+        </select>
+    </div>
+   <br>
+   <br>
+   <br>
+   <br>
+   <div id="caja3"><!--Tercera caja-->
+      <label id="l3">Cantidad que desea convertir:</label>
+      <input type="text" id="cantidad1"><!--Caja de texto donde se ingresa la cantidad a convertir-->
+   </div>
+   <input type="button" id="btnConvertidor" value="Convertir">
+   <hr id="linea_escondida">
+   <div id="caja4"><!--Cuarta caja-->
+      <label id="l4">Cantidad Convertida:</label>
+      <input type="text" id="cantidad2" readonly><!--Segunda caja de texto donde se muestra la conversion-->
+   </div>
+   </form>
+   </div>     
+</article>
+<footer>
+	<p>2015 &#174; All Rights Reserved</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Conversor de Divisas</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilo_slider.css" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="../js/CierreSesion.js"></script>
+    <script type="text/javascript" src="../js/Conversiones.js"></script>
+    <script src="../js/plugin/bjqs.min.js"></script>
+    <script src="../js/slider.js"></script>
+    <script type="text/javascript" src="../js/mostrarregistro.js"></script>
+
+    <!--Script para menu responsive-->
+    <script src="../js/plugin/modernizr.custom.js"></script>  
+    <script src="../js/plugin/jquery-1.9.1.min.js"></script>  
+    <script src="../js/menuresponsive.js"></script> 
+</head>
+<body>
+<div id="cajita"></div>
+<!--Cabecera donde se encuentra el titulo de la pagina-->
+<header>
+        <img alt="monedas"id="Images"class="Images" src="../img/Monedas.png">
+	<h1 id="Titulo">Conversor de Divisas</h1>
+        <img alt="monedas"id="Images"class="Images" src="../img/Monedas.png">
+</header>
+<!---->
+
+<!--Desde aqui inicia el menu de las paginas web-->
+<nav id="nav-main" class="nav-main"> 
+<ul class="Menu" id="nav">
+	<li><a  id="Primero" title="Opcion 1" class="Opc" href="index.html">Inicio</a></li>
+	<!--li><a title="Opcion 2" class="Opc" href="Paginas Secundarias/historiadivisas.html">Registrarse</a></li-->
+	<li><a title="Opcion 3" class="Opc" href="convertidor.html">Conversiones Divisas</a></li>
+	<li><a title="Opcion 4" class="Opc" href="registro.html">Registro</a></li>
+	<li><a title="Opcion 5" class="Opc" href="Nosotros.html">Nosotros</a></li>
+</ul>
+</nav>
+<div id="nav-trigger">
+<span>Menu</span>
+</div>
+<nav id="nav-mobile"></nav>
+
+<!--Final del menu-->
+
+<!---Slider-->
+<div id="slider">
+        <ul class="bjqs">
+            <li>
+                <img src="../img/1.jpg" alt="" title="Convertidor de Divisas Libre" />
+            </li>
+            <li>
+                <img src="../img/2.jpg" alt="" title="Convertidor de Divisas Libre" />
+            </li>
+            <li>
+                <img src="../img/3.jpg" alt="" title="Convertidor de Divisas Libre" />
+            </li>
+        </ul>
+</div>
+<!--Fin del Slider -->
+
+<!--Seccion donde se umuestra la tabla-->
+<section>
+    <article class="inicio">
+        <h3>Registro de conversiones realizadas</h3>
+    <table id="tablaregistro"><!--tabla de registro-->
+        
+        <!---->
+        <!--Resto de filas-->
+    </table><!--Fin de la tabla-->
+    </article>
+</section><!--Finde la seccion-->
+<footer>
+	<p>2015 &#174; All Rights Reserved</p>
+</footer>
+</body>
+</html>

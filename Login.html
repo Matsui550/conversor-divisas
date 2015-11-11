@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Conversor de Divisas</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/formulario.css">
+</head>
+<body>
+<div id="cajita"></div>
+    <script type="text/javascript" src="js/Login.js"></script>
+<!--Cabecera del documento donde se encuentra el titulo-->
+<header>
+        <img alt="monedas" id="Images" class="Images" src="img/Monedas.png">
+	<h1 id="Titulo">Conversor de Divisas</h1>
+        <img alt="monedas" id="Images" class="Images" src="img/Monedas.png">
+</header>
+<!--
+Menu de la pagina web
+<nav class="container">
+<ul class="Menu">
+	<li><a  id="Primero" title="Opcion 1" class="Opc" href="../index.html">Inicio</a></li>
+    <li><a title="Opcion 2" class="Opc" href="historiadivisas.html">Registrarse</a></li>
+    <li><a title="Opcion 3" class="Opc" href="convertidor.html">Conversiones Divisas</a></li>
+    <li><a title="Opcion 4" class="Opc" href="registro.html">Registro</a></li>
+    <li><a title="Opcion 5" class="Opc" href="Nosotros.html">Nosotros</a></li>
+</ul>
+</nav>
+-->
+<!---->
+<!--Seccion donde se muestra la informacion de la pagina-->
+<section>
+    <article class="caja"><!--segunda caja que se comporta como articulo-->
+        <form name="formulario" id="formulario">
+        <label>Registro de sesion</label>
+        <label id="label1"><b>NOMBRE</b></label>
+        <input type="text" id="txtUsuario">
+        <br>
+        <label id="error1">Nombre Erroneo</label>
+        <label><b>EMAIL</b></label>
+        <input type="email" id="txtEmail">
+        <br>
+        <label id="error2">Email Erroneo</label>
+        <label><b>PAÍS</b></label>
+        <center><select id="Pais" name="Pais">
+            <option value="El Salvador" selected>El Salvador</option>
+            <option value="Nicaragua">Nicaragua</option>
+            <option value="Honduras">Honduras</option>
+            <option value="Guatemala">Guatemala</option>
+            <option value="Belice">Belice</option>
+            <option value="Panama">Panama</option>
+            <option value="Costa Rica">Costa Rica</option>
+        </select></center>
+        <br>
+        <center><input class="btnOK" type="button" value="Continuar" id="btnOK" name="btnOK"></center>
+        <br>
+        </form>
+    </article><!--FIN-->
+</section><!--FIN-->
+<footer>
+	<p>2015 &#174; All Rights Reserved</p>
+</footer>
+</body>
+</html>
