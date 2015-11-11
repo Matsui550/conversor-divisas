@@ -3,7 +3,7 @@ if(window.addEventListener){
 	window.addEventListener("load", comprobarSesion = function (){
 		if(localStorage.length == 0){
 			alert("No ha Iniciado Sesión");
-			window.location = "../Login.html";
+			window.location = "../index.html";
 		}
 		else{
 			iniciar();
