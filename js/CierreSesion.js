@@ -26,7 +26,7 @@ function cerrarsesion(){
 	if(boton.addEventListener){
 		boton.addEventListener("click", cerrar = function (){
 			localStorage.clear();
-			window.location = "../Login.html";
+			window.location = "../index.html";
 		}, true);
 	}
 }
